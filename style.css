@@ -1,5 +1,10 @@
 /* Reset Básico */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 body {
     background-color: #f0f2f5;
@@ -8,27 +13,48 @@ body {
 
 /* Header Estilo Clash */
 header {
-    background-color: #1C375C; /* Azul Clash */
+    background-color: #1C375C;
+    /* Azul Clash */
     color: white;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header .logo { font-size: 1.5rem; font-weight: bold; color: #FFD700; } /* Dourado */
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+}
 
-nav ul { list-style: none; display: flex; gap: 20px; }
-nav a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
-nav a:hover, nav a.active { color: #FFD700; }
+/* Dourado */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #FFD700;
+}
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://etgeekera.com/wp-content/uploads/2016/05/clash-royale-banner.jpg?w=788');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://etgeekera.com/wp-content/uploads/2016/05/clash-royale-banner.jpg?w=788');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -37,8 +63,17 @@ nav a:hover, nav a.active { color: #FFD700; }
     color: white;
 }
 
-.hero h1 { font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px black; }
-.hero p { font-size: 1.2rem; margin-bottom: 20px; max-width: 600px; }
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
 
 .btn-cta {
     background-color: #FFD700;
@@ -49,7 +84,10 @@ nav a:hover, nav a.active { color: #FFD700; }
     border-radius: 50px;
     transition: transform 0.2s;
 }
-.btn-cta:hover { transform: scale(1.05); }
+
+.btn-cta:hover {
+    transform: scale(1.05);
+}
 
 /* Cards */
 .features {
@@ -65,12 +103,15 @@ nav a:hover, nav a.active { color: #FFD700; }
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-top: 5px solid #367CFF;
 }
 
-.card h3 { color: #1C375C; margin-bottom: 10px; }
+.card h3 {
+    color: #1C375C;
+    margin-bottom: 10px;
+}
 
 /* Footer */
 footer {
@@ -84,12 +125,20 @@ footer {
 /* Estilos Específicos das Páginas Internas */
 .conteudo-pagina {
     padding: 40px 10%;
-    min-height: 70vh; /* Garante que o rodapé fique lá embaixo */
+    min-height: 70vh;
+    /* Garante que o rodapé fique lá embaixo */
     text-align: center;
 }
 
-.conteudo-pagina h1 { color: #1C375C; margin-bottom: 10px; }
-.intro-text { margin-bottom: 40px; color: #666; }
+.conteudo-pagina h1 {
+    color: #1C375C;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    margin-bottom: 40px;
+    color: #666;
+}
 
 /* Estilo da Caixa de Dica */
 .dica-box {
@@ -97,11 +146,15 @@ footer {
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-left: 5px solid #FFD700; /* Borda Dourada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #FFD700;
+    /* Borda Dourada */
 }
 
-.dica-box h2 { margin-bottom: 15px; color: #333; }
+.dica-box h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
 
 /* Estilo da Tabela */
 .tabela-elixir {
@@ -111,7 +164,8 @@ footer {
     border-collapse: collapse;
 }
 
-.tabela-elixir th, .tabela-elixir td {
+.tabela-elixir th,
+.tabela-elixir td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
     text-align: center;
@@ -129,14 +183,137 @@ footer {
 
 .conteudo-pagina {
     /* Fundo com a imagem do Campo de Treino + filtro branco para leitura */
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
-                url('https://www.clashroyaledicas.com/wp-content/uploads/2023/03/skin-campo-treino-clash-royale-boot-camp-1024x558.jpg');
-    
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('https://www.clashroyaledicas.com/wp-content/uploads/2023/03/skin-campo-treino-clash-royale-boot-camp-1024x558.jpg');
+
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* O fundo fica fixo quando rola a página */
-    
+    background-attachment: fixed;
+    /* O fundo fica fixo quando rola a página */
+
     padding: 40px 10%;
     min-height: 80vh;
     text-align: center;
+}
+
+/* --- Estilos da Página de Decks --- */
+
+.decks-page {
+    /* Fundo diferente: Arena Lendária (Escura e roxa) */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://wallpaperaccess.com/full/1136667.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px 5%;
+    min-height: 85vh;
+    text-align: center;
+    color: white;
+}
+
+.decks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Se a tela for pequena, cai pra linha de baixo */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* O Cartão do Deck */
+.deck-card {
+    background: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* Para a imagem não sair da borda */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    color: #333;
+    /* Texto preto dentro do card branco */
+}
+
+.deck-card:hover {
+    transform: translateY(-10px);
+    /* Sobe um pouquinho quando passa o mouse */
+}
+
+/* Cabeçalho do Card (Onde fica a imagem) */
+.card-header {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.card-header img {
+    height: 100px;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.card-header h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    text-shadow: 1px 1px 3px black;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Cores específicas para cada tipo de deck */
+.bait {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.clashroyaledicas.com/wp-content/uploads/2016/07/tronco-clash-royale-wiki-1068x544.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hog {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.clashroyaledicas.com/wp-content/uploads/2016/02/corredor-clash-royale-wiki-1068x544.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.golem {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.clashroyaledicas.com/wp-content/uploads/2020/03/golem-clash-royale-wiki-1068x544.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Corpo do Card */
+.card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-body h3 {
+    font-size: 1rem;
+    color: #1C375C;
+    margin: 15px 0 5px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.card-body ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.card-body li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-copiar {
+    display: block;
+    background-color: #367CFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-copiar:hover {
+    background-color: #1C375C;
 }
