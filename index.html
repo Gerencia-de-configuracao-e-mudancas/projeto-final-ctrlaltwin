@@ -10,10 +10,14 @@
 <body>
 
     <header>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        
         <div class="logo">👑 ClashGuide</div>
-        <nav>
+
+        <nav id="mySidebar" class="sidebar" aria-label="Menu principal" onmouseleave="toggleMenu()">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
             <ul>
-                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Início</a></li>
                 <li><a href="decks.html">Melhores Decks</a></li>
                 <li><a href="dicas.html">Dicas Pro</a></li>
             </ul>
@@ -48,5 +52,6 @@
         <p>Desenvolvido por <strong>Kaik Lopes</strong> e <strong>Lucas Pereira</strong></p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
