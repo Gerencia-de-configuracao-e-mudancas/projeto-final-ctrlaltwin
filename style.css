@@ -401,3 +401,37 @@ footer {
 .atk { background-color: #e74c3c; } /* Vermelho Ataque */
 .def { background-color: #3498db; } /* Azul Defesa */
 .dif { background-color: #f1c40f; } /* Amarelo Dificuldade */
+
+/* --- ESTILO DA SEÇÃO BALANCEAMENTO (Issue #10) --- */
+.secao-balanceamento {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9ecef; /* Cinza claro para destacar */
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.secao-balanceamento h2 {
+    color: #1C375C;
+    margin-bottom: 15px;
+}
+
+.secao-balanceamento p {
+    color: #555;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto; /* Centraliza o texto */
+    margin-right: auto;
+}
+
+/* Estilo específico para o botão dessa seção */
+.btn-balanceamento {
+    background-color: #1C375C;
+    color: #FFD700;
+}
+
+.btn-balanceamento:hover {
+    background-color: #FFD700;
+    color: #1C375C;
+    transform: scale(1.05); /* Efeito de zoom */
+}
